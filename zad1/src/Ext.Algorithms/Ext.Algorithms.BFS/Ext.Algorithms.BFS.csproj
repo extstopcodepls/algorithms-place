@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B87600E4-94DD-44AF-9CE6-C72AE846F0F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ext.Algorithms.BFS</RootNamespace>
+    <AssemblyName>Ext.Algorithms.BFS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BFS\BfsAlgorithm.cs" />
+    <Compile Include="BFS\BfsAlgorithmFacade.cs" />
+    <Compile Include="BFS\Config\BfsConfigAlgorithm.cs" />
+    <Compile Include="BFS\Graphs\Factory\GraphFactory.cs" />
+    <Compile Include="BFS\Graphs\Factory\NodeComparer.cs" />
+    <Compile Include="BFS\Graphs\ListIncydentialGraph.cs" />
+    <Compile Include="BFS\Graphs\IGraph.cs" />
+    <Compile Include="BFS\Graphs\Graph.cs" />
+    <Compile Include="BFS\Graphs\Node.cs" />
+    <Compile Include="BFS\Input\BfsAlgorithmInput.cs" />
+    <Compile Include="BFS\Resolver\BfsAlgorithmResultToContentResolver.cs" />
+    <Compile Include="BFS\Result\BfsAlgorithmResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Ext.Algorithms.Common\Ext.Algorithms.Common.csproj">
+      <Project>{d38c1f03-7c55-403a-8d72-8eb2fcd9a632}</Project>
+      <Name>Ext.Algorithms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ext.Algorithms.Core\Ext.Algorithms.Core.csproj">
+      <Project>{48679a7d-2767-4599-b88b-b8c1a1d31d4a}</Project>
+      <Name>Ext.Algorithms.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
