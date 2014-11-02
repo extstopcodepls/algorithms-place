@@ -39,8 +39,11 @@ namespace Ext.Algorithms.BFS.BFS
                 item.Value.OrderBy(node => node.Label);
             }
 
+            var firstLineOfData = data.FirstOrDefault();
 
-            var startNode = new Node { Label = "x" + data.FirstOrDefault() };
+            var labelOfFirstNode = firstLineOfData.Contains("x") ? firstLineOfData : "x" + firstLineOfData;
+
+            var startNode = new Node { Label = labelOfFirstNode };
 
             _algorithm = new BfsAlgorithm<Node>(graph, startNode);
 
