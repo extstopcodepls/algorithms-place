@@ -67,6 +67,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ProfilingSessions\Session20141105_194514.sdps" />
     <Content Include="test.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

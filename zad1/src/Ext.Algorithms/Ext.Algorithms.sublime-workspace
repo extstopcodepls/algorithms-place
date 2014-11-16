@@ -1,0 +1,239 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Ext.Algorithms.BFS/BFS/BfsAlgorithm.cs",
+			"settings":
+			{
+				"buffer_size": 2478,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS/BFS"
+	],
+	"file_history":
+	[
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.sublime-project",
+		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/User/C#.sublime-settings",
+		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS/BFS/BfsAlgorithm.cs",
+		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/User/OmniSharpSublime.sublime-settings",
+		"/C/Users/Paul B/Documents/prezentacja/tutorial/One/One/Tutorial.fsx",
+		"/C/Users/Paul B/Documents/prezentacja/tutorial/One/SimpeTypes/Script.fsx",
+		"/E/filmy/Game.of.Thrones.S02E10.HDTV.x264-ASAP.txt",
+		"/C/Users/Paul B/Downloads/Solucja/BFS/BFS/BFS/Graph.cs",
+		"/C/Users/Paul B/Downloads/game.of.thrones.what.is.dead.may.never.die.(2012).pol.1cd.(4519746)/Game.of.Thrones.S02E03.HDTV.XviD-FQM.txt",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/fil/fil05.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/fil/fil04.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/fil/fil01.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/fil/fil00.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/fil/fil09.in",
+		"/C/projects/testprojs/asseco-contest/ConsoleApplication1/ConsoleApplication1/bin/1/pap09.out",
+		"/C/projects/testprojs/asseco-contest/ConsoleApplication1/ConsoleApplication1/bin/Debug/pap00.out",
+		"/C/projects/testprojs/asseco-contest/ConsoleApplication1/ConsoleApplication1/bin/Debug/pap01.out",
+		"/C/projects/testprojs/asseco-contest/ConsoleApplication1/ConsoleApplication1/bin/Debug/pap10.in",
+		"/C/projects/testprojs/asseco-contest/ConsoleApplication1/ConsoleApplication1/bin/Debug/pap09.in",
+		"/C/projects/testprojs/asseco-contest/ConsoleApplication1/ConsoleApplication1/bin/Debug/pap08.out",
+		"/C/projects/testprojs/asseco-contest/ConsoleApplication1/ConsoleApplication1/bin/Debug/pap08.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/pap/pap06.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/pap/pap03.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/pap/pap02.in",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/pap/pap00.in",
+		"/C/Users/Paul B/.npmrc",
+		"/E/backup/dreamspark_login_pass",
+		"/C/Users/Paul B/Downloads/marathon24_2014_problemset_and_inputs/pap/pap01.in",
+		"/E/filmy/X-Men Days of Future Past (2014) WEBDL DVDRip XviD-MAXSPEED/X-Men Days of Future Past (2014) WEBDL DVDRip XviD-MAXSPEED.nfo"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Ext.Algorithms.BFS/BFS/BfsAlgorithm.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1109,
+								1109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"project": "Ext.Algorithms.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

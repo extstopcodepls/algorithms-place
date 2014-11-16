@@ -50,6 +50,8 @@ namespace Ext.Algorithms.BFS.BFS
 
             queue.Enqueue(startingNode);
 
+            System.String.For
+
             startingNode.IsVisited = true;
 
             while (queue.Count > 0)
