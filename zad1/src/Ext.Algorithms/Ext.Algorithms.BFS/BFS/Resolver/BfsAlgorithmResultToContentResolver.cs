@@ -34,7 +34,7 @@ namespace Ext.Algorithms.BFS.BFS.Resolver
         {
             var list = _result.Result;
 
-            string[] contents = new string[list.Count];
+            var contents = new string[list.Count];
 
             list.ForEach((node, i) =>
             {

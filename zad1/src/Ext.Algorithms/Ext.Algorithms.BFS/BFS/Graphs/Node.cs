@@ -13,14 +13,7 @@ namespace Ext.Algorithms.BFS.BFS.Graphs
 
         public bool Equals(Node other)
         {
-            if (this.Label == other.Label)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Label == other.Label;
         }
     }
 }

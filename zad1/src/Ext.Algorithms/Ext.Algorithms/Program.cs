@@ -4,15 +4,10 @@ using Ext.Algorithms.BFS.BFS.Graphs;
 using Ext.Algorithms.BFS.BFS.Input;
 using Ext.Algorithms.BFS.BFS.Resolver;
 using Ext.Algorithms.Common;
-using Ext.Algorithms.Core.Algorithms;
-using Ext.Algorithms.Core.Algorithms.Config;
 using Ext.Algorithms.Core.Algorithms.Inputs;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ext.Algorithms
 {
@@ -54,7 +49,7 @@ namespace Ext.Algorithms
             [Aliases("fout")]
             [Description("Sciezka do pliku wyjsciowego")]
             string outputFilename,
-            
+
             [Description("Czy wypisywać wyniki na ekran?")]
             bool verbose)
         {
@@ -73,7 +68,6 @@ namespace Ext.Algorithms
 	        }
             else
             {
-                input = null;
                 throw new Exception("Brak pliku");
             }
 
@@ -97,8 +91,10 @@ namespace Ext.Algorithms
                 Console.WriteLine(stringResult);
             }
 
+            
+
             FileContentSaver.Save(stringResult, outputFilename);
         }
-       
+
     }
 }

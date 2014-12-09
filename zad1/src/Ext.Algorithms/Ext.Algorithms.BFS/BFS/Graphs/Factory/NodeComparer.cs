@@ -10,14 +10,7 @@ namespace Ext.Algorithms.BFS.BFS.Graphs.Factory
     {
         public bool Equals(Node x, Node y)
         {
-            if (x.Label == y.Label)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return x.Label == y.Label;
         }
 
         public int GetHashCode(Node obj)

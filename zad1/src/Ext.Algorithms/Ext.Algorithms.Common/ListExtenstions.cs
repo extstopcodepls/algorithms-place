@@ -10,7 +10,7 @@ namespace Ext.Algorithms.Common
     {
         public static void ForEach<T>(this List<T> list, Action<T, int> action)
         {
-            int iteration = 0;
+            var iteration = 0;
             foreach (var item in list)
             {
                 action.Invoke(item, iteration);

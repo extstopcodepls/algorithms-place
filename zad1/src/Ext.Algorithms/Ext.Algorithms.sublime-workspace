@@ -3,16 +3,43 @@
 	{
 		"selected_items":
 		[
+			[
+				"L",
+				"List"
+			],
+			[
+				"Firs",
+				"FirstOrDefault<TSource>(Func<TSource, bool> predicate)	TSource"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Ext.Algorithms.BFS/BFS/BfsAlgorithm.cs",
+			"contents": "Package Control Messages\n========================\n\nOmniSharp:\n---------\n\n  ***NOTE*** : If you're on Windows, we are aware of an issue that when upgrading Omnisharp.exe the user is required to close Sublime. You need to ensure Omnisharp.exe is not running and then you can safely open Sublime again. This is because the program is in use and Windows cannot copy over a new version whilst in use.  If anyone would like to help us improve this experience please get in touch!\n  \n  Enhancements:\n  \n  * Ability to \"Navigate To\", this is similar to Sublime's \"Go to Symbol\" however, this is alphabetical and also shows fields within a class.\n  \n",
 			"settings":
 			{
-				"buffer_size": 2478,
+				"buffer_size": 641,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/Paul B/Desktop/openvpn",
+			"settings":
+			{
+				"buffer_size": 20,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Hello dear Etsy,\n\nmy name is Maciej Borawski. Today at 17.48 my shop has been closed with permanent deactivate my entire account. I would like to reopen my old store mail - yourchoiseisbestchoise@gmail.com, because closing (as I believe) was wrong, because I did not commit any offenses that violate the rules of Etsy.com. I think I know what the problem was, so I decided to write about it and report the matter. My friend ran a store from August or September. In November, however, his store has been closed because he was violating copyright laws. He used some copyrighted designs and his account has been removed from Etsy. And I understand it, because it violated the terms & conditions. Today I decided to visit a friend and by the way make use of his computer. I knew that he's shop was closed, but I did not know that will close my shop that way. You can trace my history of logins - IP address and any other. I would ask you to check all my auctions, because I know that they do not infringe copyright and everything was legal. I fulfill all the conditions for the use of Etsy.\nTherefore, I would ask to reconsider my case and verify addresses, logins, auctions and compliance with the rules. Also I would ask for the reopening of the store and to reactivate my account. I am very happy using of the store and would like to continue to work with. That's why I care so much about reopen my old store.\nFor all the trouble and inconvenience I am very sorry. \n\nGreetings, Maciej",
+			"settings":
+			{
+				"buffer_size": 1483,
+				"line_ending": "Windows",
+				"name": "Hello dear Etsy,"
 			}
 		}
 	],
@@ -54,10 +81,19 @@
 	],
 	"file_history":
 	[
-		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.sublime-project",
-		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/User/C#.sublime-settings",
-		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
 		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS/BFS/BfsAlgorithm.cs",
+		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/User/C#.sublime-settings",
+		"/C/Program Files/OpenVPN/config/xcode_bstok.ovpn",
+		"/C/Users/Paul B/Desktop/openvpn",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS/BFS/BfsAlgorithmFacade.cs",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms/Program.cs",
+		"/C/Users/Paul B/Documents/VPProjects/postgres.vpp",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS/BFS/Graphs/Factory/GraphFactory.cs",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms/obj/Debug/Ext.Algorithms.csproj.FileListAbsolute.txt",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.Common/FileContentSaver.cs",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.sublime-project",
+		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms/packages.config",
+		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
 		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/User/OmniSharpSublime.sublime-settings",
 		"/C/Users/Paul B/Documents/prezentacja/tutorial/One/One/Tutorial.fsx",
 		"/C/Users/Paul B/Documents/prezentacja/tutorial/One/SimpeTypes/Script.fsx",
@@ -118,37 +154,91 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Ext.Algorithms.BFS/BFS/BfsAlgorithm.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2478,
+						"buffer_size": 641,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1109,
-								1109
+								641,
+								641
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Paul B/Desktop/openvpn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1086,
+								1086
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Hello dear Etsy,",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -185,13 +275,17 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"output.variable_get":
 	{
-		"height": 0.0
+		"height": 100.0
 	},
 	"project": "Ext.Algorithms.sublime-project",
 	"replace":
@@ -204,6 +298,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"fac",
+				"Ext.Algorithms.BFS\\BFS\\BfsAlgorithmFacade.cs"
+			],
+			[
+				"progra",
+				"Ext.Algorithms\\Program.cs"
+			]
 		],
 		"width": 0.0
 	},
@@ -231,7 +333,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 255.0,
+	"side_bar_width": 174.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -5,11 +5,8 @@ using Ext.Algorithms.BFS.BFS.Input;
 using Ext.Algorithms.Core.Algorithms.Config;
 using Ext.Algorithms.Core.Algorithms.Inputs;
 using Ext.Algorithms.Core.Algorithms.Results;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ext.Algorithms.BFS.BFS
 {
@@ -32,17 +29,14 @@ namespace Ext.Algorithms.BFS.BFS
             
             var data = Input.Data as IEnumerable<string>;
 
-            var graph = graphFactory.Build<Node>(data);
+            if (data == null) return null;
 
-            foreach (var item in graph.List)
-            {
-                item.Value.OrderBy(node => node.Label);
-            }
+            var graph = graphFactory.Build<Node>(data);
 
             var firstLineOfData = data.FirstOrDefault();
 
-            var labelOfFirstNode = firstLineOfData.Contains("x") ? firstLineOfData : "x" + firstLineOfData;
-
+            var labelOfFirstNode = firstLineOfData != null && firstLineOfData.Contains("x") ? firstLineOfData : "x" + firstLineOfData;
+            
             var startNode = new Node { Label = labelOfFirstNode };
 
             _algorithm = new BfsAlgorithm<Node>(graph, startNode);

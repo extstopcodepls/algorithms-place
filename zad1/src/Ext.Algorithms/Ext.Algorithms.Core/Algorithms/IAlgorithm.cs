@@ -1,11 +1,4 @@
-﻿using Ext.Algorithms.Core.Algorithms.Config;
-using Ext.Algorithms.Core.Algorithms.Inputs;
-using Ext.Algorithms.Core.Algorithms.Results;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Ext.Algorithms.Core.Algorithms.Results;
 
 namespace Ext.Algorithms.Core.Algorithms
 {
