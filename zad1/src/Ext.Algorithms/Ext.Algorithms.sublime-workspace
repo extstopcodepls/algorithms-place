@@ -16,30 +16,11 @@
 	"buffers":
 	[
 		{
-			"contents": "Package Control Messages\n========================\n\nOmniSharp:\n---------\n\n  ***NOTE*** : If you're on Windows, we are aware of an issue that when upgrading Omnisharp.exe the user is required to close Sublime. You need to ensure Omnisharp.exe is not running and then you can safely open Sublime again. This is because the program is in use and Windows cannot copy over a new version whilst in use.  If anyone would like to help us improve this experience please get in touch!\n  \n  Enhancements:\n  \n  * Ability to \"Navigate To\", this is similar to Sublime's \"Go to Symbol\" however, this is alphabetical and also shows fields within a class.\n  \n",
+			"file": "/C/Users/Paul B/Downloads/Ford-Fulkerson/Ford-Fulkerson/Ford-Fulkerson/classes/FordFulkersonAlgorithm.cs",
 			"settings":
 			{
-				"buffer_size": 641,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/C/Users/Paul B/Desktop/openvpn",
-			"settings":
-			{
-				"buffer_size": 20,
+				"buffer_size": 5342,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Hello dear Etsy,\n\nmy name is Maciej Borawski. Today at 17.48 my shop has been closed with permanent deactivate my entire account. I would like to reopen my old store mail - yourchoiseisbestchoise@gmail.com, because closing (as I believe) was wrong, because I did not commit any offenses that violate the rules of Etsy.com. I think I know what the problem was, so I decided to write about it and report the matter. My friend ran a store from August or September. In November, however, his store has been closed because he was violating copyright laws. He used some copyrighted designs and his account has been removed from Etsy. And I understand it, because it violated the terms & conditions. Today I decided to visit a friend and by the way make use of his computer. I knew that he's shop was closed, but I did not know that will close my shop that way. You can trace my history of logins - IP address and any other. I would ask you to check all my auctions, because I know that they do not infringe copyright and everything was legal. I fulfill all the conditions for the use of Etsy.\nTherefore, I would ask to reconsider my case and verify addresses, logins, auctions and compliance with the rules. Also I would ask for the reopening of the store and to reactivate my account. I am very happy using of the store and would like to continue to work with. That's why I care so much about reopen my old store.\nFor all the trouble and inconvenience I am very sorry. \n\nGreetings, Maciej",
-			"settings":
-			{
-				"buffer_size": 1483,
-				"line_ending": "Windows",
-				"name": "Hello dear Etsy,"
 			}
 		}
 	],
@@ -81,10 +62,21 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Paul B/Desktop/openvpn",
+		"/C/eclipse/eclipse.ini",
+		"/C/Users/Paul B/Documents/70488/index.html",
+		"/C/Users/Paul B/Documents/70488/index4.html",
+		"/C/Users/Paul B/Documents/70488/index7.html",
+		"/C/Users/Paul B/Documents/70488/index5.html",
+		"/C/Users/Paul B/Documents/70488/index3.html",
+		"/C/Users/Paul B/Documents/70488/index9.html",
+		"/C/Users/Paul B/Documents/70488/index2.html",
+		"/C/Users/Paul B/Documents/70488/index6.html",
+		"/C/Users/Paul B/Documents/70488/index8.html",
+		"/C/Users/Paul B/Documents/70488/index10.html",
 		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS/BFS/BfsAlgorithm.cs",
 		"/C/Users/Paul B/AppData/Roaming/Sublime Text 3/Packages/User/C#.sublime-settings",
 		"/C/Program Files/OpenVPN/config/xcode_bstok.ovpn",
-		"/C/Users/Paul B/Desktop/openvpn",
 		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms.BFS/BFS/BfsAlgorithmFacade.cs",
 		"/C/projects/studia/algorithms-place/zad1/src/Ext.Algorithms/Ext.Algorithms/Program.cs",
 		"/C/Users/Paul B/Documents/VPProjects/postgres.vpp",
@@ -154,91 +146,35 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/C/Users/Paul B/Downloads/Ford-Fulkerson/Ford-Fulkerson/Ford-Fulkerson/classes/FordFulkersonAlgorithm.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 641,
+						"buffer_size": 5342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								641,
-								641
+								3002,
+								3002
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/C#/C#.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Paul B/Desktop/openvpn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20,
-								20
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
+						"translation.x": -0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1483,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1086,
-								1086
-							]
-						],
-						"settings":
-						{
-							"auto_name": "Hello dear Etsy,",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
