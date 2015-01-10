@@ -40,6 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlgorithmFactory.cs" />
+    <Compile Include="BTree\BTree.cs" />
+    <Compile Include="BTree\BTreeProcessor.cs" />
+    <Compile Include="BTree\Entry.cs" />
+    <Compile Include="BTree\BTreeNode.cs" />
     <Compile Include="FordFulkerson\Channel.cs" />
     <Compile Include="FordFulkerson\FlowNetwork.cs" />
     <Compile Include="FordFulkerson\FlowNetworkManager.cs" />

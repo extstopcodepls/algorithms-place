@@ -138,7 +138,10 @@ namespace Ext.Algorithms.Desktop.ViewModels
 
         public void DownloadResult()
         {
-            var saveFileDialog = new SaveFileDialog();
+            var saveFileDialog = new SaveFileDialog
+            {
+                Filter = "(*.txt)|*.txt"
+            };
 
             var result = saveFileDialog.ShowDialog();
 
