@@ -11,9 +11,7 @@
         <Grid Grid.Column="0">
             <DockPanel>
                 <Grid Margin="10,5" DockPanel.Dock="Top">
-                    <TextBlock>
-                        <TextBlock.Text>Wynik</TextBlock.Text>
-                    </TextBlock>
+                    <TextBlock Text="Wynik" />
                 </Grid>
                 <Grid Margin="10,5,10,0" DockPanel.Dock="Top" Height="300">
                     <TextBox x:Name="ResultText" VerticalScrollBarVisibility="Auto"/>
