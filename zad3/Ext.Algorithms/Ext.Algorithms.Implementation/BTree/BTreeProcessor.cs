@@ -20,11 +20,9 @@ namespace Ext.Algorithms.Implementation.BTree
             var m = 0;
             if(!Int32.TryParse(content[0], out m)) return new StringAlgorithmResult("słabo");
 
-            content = content.Skip(1).ToArray();
-
             var btree = new BTree<int, char>(m);
 
-            var data = content[0].Split(' ');
+            var data = content[1].Split(' ');
 
             var dataToInsert = data.Select(x =>
             {
@@ -36,7 +34,69 @@ namespace Ext.Algorithms.Implementation.BTree
 
             btree.BulkInsert(dataToInsert);
 
-            return new StringAlgorithmResult(btree.ToString());
+            var treeBeforeOperation = btree.ToString();
+
+            var op = content[2];
+
+            String result;
+
+            switch (op)
+            {
+                case "insert":
+                    btree.Insert(content[3][0], content[3][0]);
+
+                    result = "Drzewo przed operacją insert:";
+
+                    result += Environment.NewLine;
+                    result += treeBeforeOperation;
+                    result += Environment.NewLine;
+
+                    result += "Drzewo po wykonaniu operacji insert:";
+
+                    result += Environment.NewLine;
+                    result += btree.ToString();
+                    result += Environment.NewLine;
+
+                    return new StringAlgorithmResult(result);
+                case "delete":
+                    btree.Delete(content[3][0]);
+
+                    result = "Drzewo przed operacją delete:";
+
+                    result += Environment.NewLine;
+                    result += treeBeforeOperation;
+                    result += Environment.NewLine;
+
+                    result += "Drzewo po wykonaniu operacji delete:";
+
+                    result += Environment.NewLine;
+                    result += btree.ToString();
+                    result += Environment.NewLine;
+
+                    return new StringAlgorithmResult(result);
+                case "search":
+                    var searchResult = btree.Search(content[3][0]);
+
+                    result = "Drzewo:";
+
+                    result += Environment.NewLine;
+                    result += treeBeforeOperation;
+                    result += Environment.NewLine;
+
+                    if (searchResult != null)
+                    {
+                        result += "Znaleziono szukaną wartość:" + searchResult.Pointer;
+                    }
+                    else
+                    {
+                        result += "Nie odnaleziono szukanej wartości";
+                    }
+
+                    return new StringAlgorithmResult(result);
+                default:
+                    return new StringAlgorithmResult("co nie taka operacja");
+
+            }
         }
     }
 }

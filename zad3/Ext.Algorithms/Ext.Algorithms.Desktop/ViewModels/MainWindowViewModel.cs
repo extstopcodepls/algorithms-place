@@ -12,11 +12,13 @@ using Microsoft.Win32;
 
 namespace Ext.Algorithms.Desktop.ViewModels
 {
-    public class MainWindowViewModel : Conductor<Screen>.Collection.OneActive
+    public sealed class MainWindowViewModel : Conductor<Screen>.Collection.OneActive
     {
         public MainWindowViewModel()
         {
             Algorithms = AlgorithmFactory.Algorithms.Keys;
+
+            DisplayName = "Algorytmy";
         }
 
         private string _filePath;

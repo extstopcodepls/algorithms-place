@@ -12,5 +12,10 @@ namespace Ext.Algorithms.Implementation.BTree
         {
             return Key.Equals(other.Key) && Pointer.Equals(other.Pointer);
         }
+
+        public override string ToString()
+        {
+            return Pointer.ToString();
+        }
     }
 }

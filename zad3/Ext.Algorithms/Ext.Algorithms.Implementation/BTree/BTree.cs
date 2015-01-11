@@ -352,31 +352,32 @@ namespace Ext.Algorithms.Implementation.BTree
 
         public override string ToString()
         {
-            var stack = new Stack<List<BTreeNode<TK, TP>>>();
+            var acc = ToString(new List<BTreeNode<TK, TP>> { Root }, String.Empty);
 
-            stack.Push(new List<BTreeNode<TK, TP>> { Root });
+            return acc;
+        }
 
-            var acc = String.Empty;
-
-            while (stack.Count > 0)
+        private static string ToString(IEnumerable<BTreeNode<TK, TP>> nodes, string agg)
+        {
+            var acc = agg;
+            foreach (var node in nodes)
             {
-                var nodes = stack.Pop();
 
-                if (nodes.Count == 0) continue;
-
-
-                var tmp = new List<BTreeNode<TK, TP>>();
-
-                foreach (var node in nodes)
+                if (node.Children.Count > 0)
                 {
-                    acc += node.Entries.Aggregate(String.Empty, (s, entry) => s + entry.Pointer.ToString() + " ") + "\t";
-                    tmp.AddRange(node.Children);
+                    var nodeStr = agg + node + "-->";
+
+                    acc += Environment.NewLine;
+                    acc += ToString(node.Children, nodeStr);
+                }
+                else
+                {
+                    var nodeStr = agg + node;
+
+                    acc += Environment.NewLine;
+                    acc += nodeStr;
                 }
                 
-                stack.Push(tmp);
-
-                acc += Environment.NewLine;
-
             }
 
             return acc;

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Ext.Algorithms.Implementation.BTree
 {
@@ -39,6 +41,11 @@ namespace Ext.Algorithms.Implementation.BTree
             {
                 return Entries.Count == _degree - 1;
             }
+        }
+
+        public override string ToString()
+        {
+            return Entries.Aggregate(String.Empty, (s, entry) => s + entry + " ");
         }
     }
 }
