@@ -65,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BTree\btree.txt" />
+    <Content Include="FordWarshall\fordwarshall.txt" />
+    <Content Include="FordFulkerson\fordfulkerson.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

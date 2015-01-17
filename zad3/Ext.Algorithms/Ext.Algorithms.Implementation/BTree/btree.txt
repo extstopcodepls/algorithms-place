@@ -1,4 +1,4 @@
-2
-a b c d e f s z k l o g
-delete
-b
+3
+a b c d e f
+insert
+z
