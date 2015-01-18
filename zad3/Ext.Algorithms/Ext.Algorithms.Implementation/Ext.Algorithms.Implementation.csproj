@@ -50,6 +50,7 @@
     <Compile Include="FordFulkerson\FordFulkersonAlgorithm.cs" />
     <Compile Include="FordFulkerson\Node.cs" />
     <Compile Include="FordWarshall\FordWarshallAlgorithm.cs" />
+    <Compile Include="KMP\KMPAlgorithm.cs" />
     <Compile Include="StringAlgorithmResult.cs" />
     <Compile Include="FordWarshall\Edge.cs" />
     <Compile Include="FordWarshall\Graph.cs" />
@@ -67,6 +68,7 @@
     <Content Include="BTree\btree.txt" />
     <Content Include="FordWarshall\fordwarshall.txt" />
     <Content Include="FordFulkerson\fordfulkerson.txt" />
+    <Content Include="KMP\input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,6 +3,7 @@ using Ext.Algorithms.Core.Enums;
 using Ext.Algorithms.Implementation.BTree;
 using Ext.Algorithms.Implementation.FordFulkerson;
 using Ext.Algorithms.Implementation.FordWarshall;
+using Ext.Algorithms.Implementation.KMP;
 
 namespace Ext.Algorithms.Implementation
 {
@@ -14,6 +15,7 @@ namespace Ext.Algorithms.Implementation
                 { ImplementedAlgorithms.FordFulkerson, new FordFulkersonAlgorithm() },
                 { ImplementedAlgorithms.FordWarshall, new FordWarshallAlgorithm() },
                 { ImplementedAlgorithms.BTree, new BTreeProcessor() },
+                { ImplementedAlgorithms.Kmp, new KmpAlgorithm() }
             };
     }
 }
