@@ -69,6 +69,7 @@
     <Content Include="FordWarshall\fordwarshall.txt" />
     <Content Include="FordFulkerson\fordfulkerson.txt" />
     <Content Include="KMP\input.txt" />
+    <Content Include="KMP\input2.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

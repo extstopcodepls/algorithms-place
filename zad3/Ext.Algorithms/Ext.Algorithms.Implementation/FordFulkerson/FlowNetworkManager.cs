@@ -85,7 +85,7 @@ namespace Ext.Algorithms.Implementation.FordFulkerson
                 {
                     foreach (var chanel in flowNetwork.Channels)
                     {
-                        if (chanel.Node1.Equals(result[i]) && chanel.Node2.Equals(result[i + 1]))
+                        if (chanel.Node1.Equals(result[i]) && chanel.Node2.Equals(result[i + 1 == result.Count ? i : i + 1]))
                         {
                             augmentingPaths.Add(chanel);
                             stringResult += chanel + Environment.NewLine;

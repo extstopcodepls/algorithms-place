@@ -19,6 +19,8 @@ namespace Ext.Algorithms.Implementation.KMP
 
             var text = data.TakeWhile(str => str != Break).ToArray();
 
+            //var wholeText = GetWholeText(text);
+
             var textToSearch = data.Reverse().First();
 
             var result = String.Empty;
@@ -27,8 +29,14 @@ namespace Ext.Algorithms.Implementation.KMP
 
             var pTable = CreateP(textToSearch);
 
-            foreach (var textLine in text)
-                textLinesInWhichTextWasFound.AddRange(Search(pTable, textLine, textToSearch));
+
+            result += "Paweł Borawski: " + GiveResult(pTable) + Environment.NewLine;
+
+//            foreach (var textLine in text)
+//                textLinesInWhichTextWasFound.AddRange(Search(pTable, text, textToSearch));
+
+            textLinesInWhichTextWasFound.AddRange(Search(pTable, text, textToSearch));
+            
 
             if (textLinesInWhichTextWasFound.Count > 0)
             {
@@ -36,7 +44,7 @@ namespace Ext.Algorithms.Implementation.KMP
                 result += "Tekst znaleziono w następujacych linijkach: " + Environment.NewLine;
 
                 result = textLinesInWhichTextWasFound.Aggregate(result,
-                    (current, next) => current += next + Environment.NewLine);
+                    (current, next) => current + (next + Environment.NewLine));
             }
             else
             {
@@ -46,22 +54,35 @@ namespace Ext.Algorithms.Implementation.KMP
             return new StringAlgorithmResult(result);
         }
 
+        private static String GetWholeText(IEnumerable<string> text)
+        {
+            return text.Aggregate(String.Empty, (source, next) => source + next);
+        }
+
+        private static string GiveResult(IEnumerable<int> pTable)
+        {
+            return pTable.Aggregate(String.Empty, (current, t) => current + (t + " "));
+        }
+
         private static int[] CreateP(String textToSearch)
         {
             var pTable = new int[textToSearch.Length];
 
             var textToSearchLength = textToSearch.Length;
 
-            pTable[0] = 0; pTable[1] = 0;
+            pTable[0] = 0;
             var t = 0; int j;
-            for (j = 2; j < textToSearchLength; j++)
+            for (j = 1; j < textToSearchLength - 1; j++)
             {
-                while ((t > 0) && (textToSearch[t+1] != textToSearch[j]))
-                    t = pTable[t];
-
-                if (textToSearch[t+1] == textToSearch[j])
+                if (textToSearch[j] == textToSearch[t])
+                {
                     t++;
+                    pTable[j] = t;           
 
+                    continue;
+                }
+
+                t = 0;
                 pTable[j] = t;
             }
 
@@ -83,10 +104,45 @@ namespace Ext.Algorithms.Implementation.KMP
                     j++;
                 if (j == textToSearchLength)
                 {
-                    result.Add(textLine);
+                    result.Add(textLine + ", i: " + j);
                     break;
                 }
                 i = i + Math.Max(1, j - pTable[j]);
+            }
+
+            return result;
+        }
+
+        private static IEnumerable<string> Search(IList<int> pTable, IEnumerable<string> textLines, string textToSearch)
+        {
+            var textLine = GetWholeText(textLines);
+            var textLineLenght = textLine.Length;
+            var textToSearchLength = textToSearch.Length;
+
+            var result = new List<string>();
+
+            var j = 0;
+            for (var i = 1; i <= textLineLenght; i++)
+            {
+                while (j > 0 && textToSearch[j] != textLine[i - 1])
+                {
+                    j = pTable[j > 0 ? j - 1 : 0];
+                }
+
+                if (textToSearch[j] == textLine[i - 1])
+                {
+                    j++;
+                }
+
+                if (j == textToSearchLength)
+                {
+                    var index = i - j + 1;
+
+                    result.Add("i: " + index);
+                }
+
+                j = pTable[j > 0 ? j - 1 : 0];
+
             }
 
             return result;
